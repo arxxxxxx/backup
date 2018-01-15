@@ -1,0 +1,13 @@
+package jp.co.internous.action;
+
+public class main {
+
+	public static void main(String[] ages){
+		System.out.println("Hello World");
+		System.out.println(gokei());
+	}
+	
+	public static int gokei(){
+		return 1+1;
+	}
+}
