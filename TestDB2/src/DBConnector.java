@@ -20,7 +20,7 @@ public class DBConnector {
 	 * データベース接続 URL
 	 */
 	private static String url =
-			"jbdc:mysql://localhost/testdb?autoReconnect=true&useSSL=false";
+			"jdbc:mysql://localhost/studydb?autoReconnect=true&useSSL=false";
 	/**
 	 * データベース接続ユーザ名
 	 */
