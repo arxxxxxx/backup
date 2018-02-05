@@ -5,12 +5,14 @@ import java.util.Map;
 
 import org.apache.struts2.interceptor.SessionAware;
 
+import com.internousdev.login.dao.LoginDAO;
+import com.internousdev.login.dto.LoginDTO;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class LoginAction extends ActionSupport implements SessionAware{
 	private String name;
 	private String password;
-	private Map<String,Object>session;
+	public Map<String,Object>session;
 
 	public String execute() throws SQLException {
 		String ret = ERROR;
@@ -19,16 +21,21 @@ public class LoginAction extends ActionSupport implements SessionAware{
 
 		// DAOクラスを呼び出してDBに接続します
 		// ユーザーが入力した「ログインID」と「パスワード」に一致する情報がないのか検索します。
+		System.out.println(password);
 		dto = dao.select(name,password);
 		if(name.equals(dto.getName())){
-			if(name.equals(dto.getPassword())){
+			if(password.equals(dto.getPassword())){
 				ret = SUCCESS;
+
+				return ret;
 			}
 		}
+		
 	session.put("name",dto.getName());
 	return ret;
 	}
 
+	
 	// name
 	public String getName(){
 		return name;
