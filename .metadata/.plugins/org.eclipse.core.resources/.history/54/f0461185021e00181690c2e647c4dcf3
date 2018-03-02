@@ -1,0 +1,19 @@
+package com.internousdev.tamplate.dao;
+
+import java.sql.Connection;
+import sql.paredStatement;
+import sql.ResultSet;
+import java.sql.SQLException;
+import com.internousdev.tamplate.dto.MyPageDTO;
+import com.internousdev.tamplate.util.DBConnector;
+
+public class MyPageDAO {
+	private DBConnetor dbConnector = new DBConnector;
+	private Connection connection = dbConnector.getConnection();
+	private MyPageDTO myPageDTO = new MyPageDTO();
+
+	public MyPageDTO getMyPageUserInfo(String item_ttion_id,String user_master_id)throws
+	SQLException{
+		String sql =
+	}
+}

@@ -10,10 +10,10 @@
 	<meta http-equiv="imagettoolbar" content="no"/>
 	<meta name="description" content=""/>
 	<meta name="keywords" content=""/>
-<title>Home画面</title>
+	<title>Home画面</title>
 
-<style type="text/css">
-/* ========TAG LAYOUT======== */
+	<style type="text/css">
+	/* ========TAG LAYOUT======== */
 	body {
 		margin:0;
 		padding:0;

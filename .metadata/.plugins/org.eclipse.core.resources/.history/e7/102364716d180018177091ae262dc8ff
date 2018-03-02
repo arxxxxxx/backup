@@ -1,9 +1,0 @@
-package Com.internousdev.webproj4.dao;
-
-import java.util.List;
-
-import Com.internousdev.webproj4.dto.HelloStrutsDTO;
-
-public class HelloStrutsDAO {
-	List<HelloStrutsDTO> helloStrutsDTOList = new AllayList<HelloStrutsDTO>();
-}
