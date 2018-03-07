@@ -58,6 +58,10 @@
 </head>
 <body>
 	<div id="header">
+		<div id="pr">
+		</div>
+	</div>
+	<div id="main">
 		<div id="top">
 			<p>UserCreateConfirm</p>
 		</div>
@@ -94,13 +98,12 @@
 					<s:submit value="完了"/>
 				</td>
 			</tr>
-			<tr>
-				<td>
-					<s:submit value="完了"/>
-				</td>
-			</tr>
 			</s:form>
 			</table>
+		</div>
+	</div>
+	<div id="footer">
+		<div id="pr">
 		</div>
 	</div>
 </body>

@@ -4,11 +4,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Cpntent-Style-Type" content="text/css"/>
-	<meta http-equiv="Content-Sctipt-Type" content="text/javascript"/>
-	<meta http-equiv="imagetoolbar" content="no"/>
-	<meta name="description" content=""/>
-	<meta name="keywords" content=""/>
+<meta http-equiv="Content-Style-Type" content="text/css"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="imagetoolbar" content="no" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
 	<title>MyPage画面</title>
 
 	<style type="text/css">
@@ -16,7 +18,7 @@
 	body{
 		margin:0;
 		padding:0;
-		line-height:1.6px;
+		line-height:1.6;
 		letter-spacing:1px;
 		font-family:Verdana,Helvetica,sans-serif;
 		font-size:12px;
@@ -92,13 +94,13 @@
 					<td><s:property value="session.total_payment"/></td>
 				</tr>
 			</table>
-			<s:form action="MyPageAction">
-				<input type="hidden" name="deleteFlg" value="1">
-				<s:submit value="削除" method="delete"/>
-			</s:form>
+				<s:form action="MyPageAction">
+					<input type="hidden" name="deleteFlg" value="1">
+					<s:submit value="削除" method="delete"/>
+				</s:form>
 		</s:if>
 		<s:if test="session.massage != null">
-			<h3><s:property value="session.message"/></h3>
+				<h3><s:property value="session.message"/></h3>
 		</s:if>
 			<div>
 				<br>

@@ -16,6 +16,7 @@ public class MyPageAction extends ActionSupport implements SessionAware{
 	public String deleteFlg;
 	private String result;
 	public String execute() throws SQLException{
+
 		// 商品履歴を削除しない場合
 		if(deleteFlg == null){
 			String item_transaction_id = session.get("id").toString();
@@ -42,15 +43,11 @@ public class MyPageAction extends ActionSupport implements SessionAware{
 
 		int res = myPageDAO.buyItemHistoryDelete(item_transaction_id,user_master_id);
 
-if(res > 0) {
-
 		if(res > 0){
 			session.put("message","商品情報を正しく削除しました。");
 		}else if(res == 0){
-			session.put("message","商品情報を正しく削除に失敗しまたした。");
+			session.put("message","商品情報の削除に失敗しまたした。");
 		}
-	}
-
 	}
 
 	public String getDeleteFlg(){
@@ -65,5 +62,4 @@ if(res > 0) {
 	public void setSession(Map<String,Object> loginSessionMap){
 		this.session = loginSessionMap;
 	}
-
 }
