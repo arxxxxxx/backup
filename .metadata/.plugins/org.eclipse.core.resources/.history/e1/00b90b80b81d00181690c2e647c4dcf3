@@ -1,7 +1,0 @@
-package com.internousdev.tamplate.action;
-
-public class HomeAction {
-	public String execute(){
-		return SUCCESS;
-	}
-}
