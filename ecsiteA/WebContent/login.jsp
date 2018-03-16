@@ -10,6 +10,7 @@
 	<meta http-equiv="imagetoolbar" content="no" />
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
+	<link rel="stylesheet" type="text/css" href="./CSS/layout.css">
 	<title>Login画面</title>
 
 	<style type="text/css">
@@ -23,46 +24,28 @@
 			font-size:12px;
 			color:#333;
 			background:#fff;
+			background-image:url(./image/garage.jpg);
+			background-size:cover;
 		}
 		table{
 			text-align:center;
 			margin:0 auto;
 		}
-		/* ========ID LAYOUT======== */
-		#top{
-			width:780px;
-			margin:30px auto;
-			border:1px solid #333;
-		}
-		#header{
-			width: 100%;
-			height:80px;
-			background-color:black;
-		}
-		#main{
-			width:100%;
-			height:500px;
-			text-align:center;
-		}
-		#footer{
-			width:100%;
-			height:80px;
-			background-color:black;
-			clear:both;
-		}
-		#text-link{
-			display:inline-block;
-			text-align:right;
+
+		h3 {
+			baclgrpimd-color: rgba(0,0,0,0);
+			color:white;
 		}
 	</style>
 </head>
 <body>
-	<div id="header">
+	<div class="header">
 		<div id="pr">
+			<img class="logo" src="./image/garage-logo.png">
 		</div>
 	</div>
-	<div id="main">
-		<div id="top">
+	<div class="main">
+		<div class="top">
 			<p>Login</p>
 		</div>
 		<div>
@@ -73,17 +56,18 @@
 				<s:submit value="ログイン"/>
 			</s:form>
 			<br/>
-			<div id="text-link">
-				<p>新規ユーザー登録は
-					<a href='<s:url action="UserCreateAction"/>'>こちら</a></p>
-				<p>Homeへ戻る場合は
-					<a href='<s:url action="GoHomeAction"/>'>こちら</a></p>
+			<div class="text-link">
+				<h3>新規ユーザー登録は
+					<a href='<s:url action="UserCreateAction"/>'>こちら</a></h3>
+				<h3>Homeへ戻る場合は
+					<a href='<s:url action="GoHomeAction"/>'>こちら</a></h3>
 			</div>
 		</div>
 	</div>
 
-	<div id="footer">
-		<div id="pr">
+	<div class="footer">
+		<div id="footer-message">
+			copyright internous | 4each is the one which provides A to Z about
 		</div>
 	</div>
 </body>

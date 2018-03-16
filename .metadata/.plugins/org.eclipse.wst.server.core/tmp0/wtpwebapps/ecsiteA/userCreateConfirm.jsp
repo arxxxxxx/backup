@@ -24,12 +24,22 @@
 			font-size:12px;
 			color:#333;
 			background:#fff;
+			background-image:url(./image/garage.jpg);
+			background-size:cover;
 		}
 
 		table{
 			text-align:center;
 			margin:0 auto;
+			color:white;
+			font-size:15px;
 		}
+
+		.ConfirmBox h3{
+			color:white;
+			font-size:15px;
+		}
+
 	</style>
 </head>
 <body>
@@ -42,7 +52,7 @@
 		<div class="top">
 			<p>UserCreateConfirm</p>
 		</div>
-		<div>
+		<div class="ConfirmBox">
 			<h3>登録する内容は以下でよろしいですか。</h3>
 			<table>
 				<s:form action="UserCreateCompleteAction">
@@ -80,7 +90,8 @@
 		</div>
 	</div>
 	<div class="footer">
-		<div id="pr">
+		<div id="footer-message">
+			copyright internous | 4each is the one which provides A to Z about
 		</div>
 	</div>
 </body>

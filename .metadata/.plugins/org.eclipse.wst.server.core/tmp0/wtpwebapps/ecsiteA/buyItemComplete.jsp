@@ -31,6 +31,11 @@
 			text-align:conter;
 			margin:0 auto;
 		}
+
+		.complete{
+			color:white;
+			
+		}
 	</style>
 </head>
 <body>
@@ -44,7 +49,7 @@
 		<div class="top">
 			<p>BuyItemComplete</p>
 		</div>
-		<div>
+		<div class="complete">
 			<p>購入手続きが完了致しました。</p>
 			<div>
 				<a href='<s:url action="MyPageAction"/>'>

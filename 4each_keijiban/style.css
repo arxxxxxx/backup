@@ -1,0 +1,129 @@
+html, body{ height: 100%;  /* ブラウザ画面の高さをmaxで使用するという意味 */
+}
+
+.logo{
+	positon:absolute;
+	top:0px;
+	left:10px;
+	}
+
+/* ヘッダー部分　ここから　 */
+header{background-color:black;
+width:100%;
+height:50px;
+line-height:50px;
+}
+
+header li{float:left;
+list-style:none;
+padding-left:20px;
+padding-right:40px;
+color:white;
+}
+
+/* ヘッダー部分　ここまで　 */
+/* メイン部分　ここから　 */
+
+.main-box{clear:left;
+width:100%;
+	}
+/* 左サイド　ここから　 */
+
+
+.leftside{
+    width:70%;
+    float:left;
+    font-family:"Hiragino Kaku GOthic ProN","メイリオ",sans-serif;
+}
+
+.subtitle{
+    margin-top:10px;
+    border-left:5px solid black;
+    border-bottom:2px solid black;
+    padding-left:10px;
+    font-size:20px;
+}
+
+form{
+    margin:0 auto;
+    margin-top:10px;
+    margin-bottom:20px;
+    background-color:#fbfbfb;
+    border:3px #ebebeb solid;
+    border-radius:10px;
+    width:100%;
+}
+
+form h1{
+    margin-left:20px;
+    border-left:4px red solid;
+    padding-top:5px;
+    padding-left:10px;
+    width:500px;
+    font-size:16px;
+}
+
+form div{
+    padding:15px;
+}
+
+.text,textarea,.dropdown{
+    border:1px solid #dfdfdf;
+    padding:5px;
+    color:#999;
+    background:#fff;
+}
+
+.submit .reset{
+    border:1px solid lightgray;
+    padding:4px 10px;
+    color:white;
+    background-color:#bfbfbf;
+    border-radius:5px;
+    border-bottom:solid 2px gray;
+}
+
+.response{
+    margin-top:10px;
+    margin-bottom:20px;
+    background-color:#fbfbfb;
+    border:3px #ebebeb solid;
+    border-radius:10px;
+    height:200px;
+    width:100%;
+}
+
+/* 左サイドの中の画像　横4つ 縦2列　ここから　 */
+/* 右サイドバー　ここから　 */
+
+.rightside{
+    float:left;
+    margin-left:20px;
+    margin-top:10px;
+    width:300px;
+	}
+
+.rightside h3{
+	border-bottom:2px dotted gray;
+	}
+
+.rightside ul{
+	padding-left:5px;
+	}
+
+.rightside li{
+	list-style:none;
+     padding-left:10px;
+	}
+
+/* 右サイドバー　ここまで　 */
+/* メイン部分　ここまで　 */
+
+footer{clear:left;
+width: 100%;
+height: 60px;
+background-color:black;
+color:white;
+text-align:center;
+line-height:60px;
+	   }

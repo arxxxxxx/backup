@@ -26,16 +26,27 @@
 			background-image:url(./image/garage.jpg);
 			background-size:cover;
 		}
-		table{
-			text-align:center;
-			margin:0 auto;
-		}
+
 		/* ========ecsite LAYOUT======== */
 
 
 		.text-center{
+			margin:0 auto;
 			display:inline-block;
 			text-align:center;
+		}
+
+		.text-center span{
+			color:white;
+		}
+
+		.message{
+			baclgrpimd-color: rgba(0,0,0,0);
+			color:white;
+		}
+
+		h1 {
+			font-size:60px;
 		}
 	</style>
 </head>
@@ -47,21 +58,21 @@
 	</div>
 	<div class="main">
 		<div class="message">
-			<p>lets</p>
+			<h1>Lets Shopping！</h1>
 		</div>
 		<div class="text-center">
 			<s:form action="HomeAction">
-				<s:submit value="商品購入"/>
+				<s:submit value="商品を購入する"/>
 			</s:form>
 			<s:if test="#session.id != null">
-				<p>ログアウトする場合は
+				<p><span>ログアウトする場合は</span>
 					<a href='<s:url action="LogoutAction"/>'>こちら</a></p>
 			</s:if>
 		</div>
 	</div>
 	<div class="footer">
 		<div id="footer-message">
-			copyright internous | 4each blog is the one which provides A to Z about
+			copyright internous | 4each is the one which provides A to Z about
 		</div>
 	</div>
 </body>

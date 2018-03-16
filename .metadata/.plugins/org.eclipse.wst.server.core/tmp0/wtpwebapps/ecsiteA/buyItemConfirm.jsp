@@ -14,7 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="./CSS/layout.css">
 	<title>BuyItemConfirm画面</title>
 	<style type="text/css">
-	/* ========TAG LAYOUT======== */
+	/* ========LAYOUT======== */
 		body{
 			margin:0;
 			padding:0;
@@ -24,11 +24,17 @@
 			font-size:12px;
 			color:12px;
 			background:#fff;
+			background-image:url(./image/menu.jpg);
+			background-size:cover;
 		}
 
 		table{
 			text-align:center;
 			margin:0 auto;
+		}
+
+		.item{
+			color:white;
 		}
 	</style>
 	<script type="text/javascript">
@@ -45,11 +51,11 @@
 		</div>
 	</div>
 	<div class="main">
-			<div>
+			<div class="item">
 			<s:form>
 				<tr>
 					<td>商品名</td>
-					<td><s:property value="session.buyItem_name"/></td>
+					<td><s:property value="session.item_name"/></td>
 				</tr>
 				<tr>
 					<td>値段</td>
@@ -76,7 +82,8 @@
 		</div>
 	</div>
 	<div class="footer">
-		<div id="pr">
+		<div id="footer-message">
+			copyright internous | 4each is the one which provides A to Z about
 		</div>
 	</div>
 </body>

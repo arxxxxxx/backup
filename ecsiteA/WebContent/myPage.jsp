@@ -23,6 +23,8 @@
 			font-size:12px;
 			color:#333;
 			background:#fff;
+			background-image:url(./image/menu.jpg);
+			background-size:cover;
 		}
 
 		table{
@@ -33,6 +35,10 @@
 		#text-right{
 			display:inline-block;
 			text-align:right;
+		}
+
+		#info{
+			color:white;
 		}
 	</style>
 </head>
@@ -46,7 +52,7 @@
 		<div class="top">
 			<p>MyPage</p>
 		</div>
-		<div>
+		<div id="info">
 		<s:if test="myPageList == null">
 			<h3>ご購入情報はありません。</h3>
 		</s:if>
@@ -85,7 +91,8 @@
 		</div>
 	</div>
 	<div class="footer">
-		<div id="pr">
+		<div id="footer-message">
+			copyright internous | 4each is the one which provides A to Z about
 		</div>
 	</div>
 </body>

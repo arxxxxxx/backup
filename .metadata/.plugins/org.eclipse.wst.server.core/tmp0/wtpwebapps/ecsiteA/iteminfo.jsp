@@ -24,6 +24,8 @@ body {
 	font-size: 12px;
 	color: #333;
 	background: #fff;
+	background-image:url(./image/menu.jpg);
+	background-size:cover;
 }
 
 .wwFormTable {
@@ -46,6 +48,7 @@ body {
 /* ========BOX LAYOUT======== */
 .item {
 	margin:0 auto;
+	color:white;
 }
 
 </style>
@@ -94,7 +97,7 @@ body {
 						</tr>
 					</table>
 				</s:form>
-			<div>
+			<div class="text-link">
 				<p>
 					前画面に戻る場合は<a href='<s:url action="GoHomeAction"/>'>こちら</a>
 				</p>

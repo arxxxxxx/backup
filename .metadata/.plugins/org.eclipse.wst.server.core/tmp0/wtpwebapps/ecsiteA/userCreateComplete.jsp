@@ -24,11 +24,17 @@
 			font-size:12px;
 			color:#333;
 			background:#fff;
+			background-image:url(./image/garage.jpg);
+			background-size:cover;
 		}
 
 		table{
 			text-align:center;
 			margin:0 auto;
+		}
+
+		h3 {
+			color:white;
 		}
 	</style>
 </head>
@@ -45,12 +51,13 @@
 		<div>
 			<h3>ユーザーの登録が完了いたしました。</h3>
 			<div>
-				<a href='<s:url action="HomeAction"/>'>ログイン</a>
+				<h2><a href='<s:url action="HomeAction"/>'>ログイン</a></h2>
 			</div>
 		</div>
 	</div>
 	<div class="footer">
-		<div id="pr">
+		<div id="footer-message">
+			copyright internous | 4each is the one which provides A to Z about
 		</div>
 	</div>
 </body>

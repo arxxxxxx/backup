@@ -23,12 +23,26 @@
 			font-size:12px;
 			color:#333;
 			background:#fff;
+			background-image:url(./image/garage.jpg);
+			background-size:cover;
 		}
 
 		table{
 			text-align:center;
 			margin:0 auto;
 		}
+
+		label{
+			color:white;
+		}
+
+		#text-link{
+			display:inline-block;
+			text-align:right;
+			background-color: rgba(0,0,0,0);
+			color:white;
+		}
+
 		</style>
 </head>
 <body>
@@ -60,7 +74,7 @@
 						<label>ログインPASS:</label>
 					</td>
 					<td>
-						<input type="text" name="loginPassword" value=""/>
+						<input type="password" name="loginPassword" value=""/>
 					</td>
 				</tr>
 				<tr>
@@ -74,14 +88,15 @@
 				<s:submit value="登録"/>
 			</s:form>
 			</table>
-			<div>
+			<div id="text-link">
 				<span>前画面に戻る場合は</span>
 				<a href='<s:url action="HomeAction"/>'>こちら</a>
 			</div>
 		</div>
 	</div>
 	<div class="footer">
-		<div id="pr">
+		<div id="footer-message">
+			copyright internous | 4each is the one which provides A to Z about
 		</div>
 	</div>
 </body>
