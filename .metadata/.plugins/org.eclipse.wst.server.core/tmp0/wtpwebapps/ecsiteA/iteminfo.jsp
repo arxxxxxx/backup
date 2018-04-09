@@ -11,7 +11,7 @@
 <meta name="description" content="" />
 <meta name="keywords" content="" />
 <link rel="stylesheet" type="text/css" href="./CSS/layout.css">
-<title>BuyItem画面</title>
+<title>ItemInfo画面</title>
 
 <style type="text/css">
 /* ========TAG LAYOUT======== */
@@ -61,7 +61,7 @@ body {
 	</div>
 	<div class="main">
 		<div class="top">
-			<p>BuyItem</p>
+			<p>ItemInfo</p>
 		</div>
 			<div>
 				<s:form action="BuyItemexeAction">
@@ -99,7 +99,7 @@ body {
 				</s:form>
 			<div class="text-link">
 				<p>
-					前画面に戻る場合は<a href='<s:url action="GoHomeAction"/>'>こちら</a>
+					HOME画面に戻る場合は<a href='<s:url action="GoHomeAction"/>'>こちら</a>
 				</p>
 				<p>
 					マイページは<a href='<s:url action="MyPageAction"/>'>こちら</a>
@@ -108,7 +108,9 @@ body {
 		</div>
 	</div>
 	<div class="footer">
-		<div id="pr"></div>
+		<div id="footer-message">
+			copyright internous | 4each is the one which provides A to Z about
+		</div>
 	</div>
 </body>
 </html>

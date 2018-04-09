@@ -102,7 +102,9 @@ body {
 	</div>
 
 	<div class="footer">
-		<div id="pr"></div>
+		<div id="footer-message">
+			copyright internous | 4each is the one which provides A to Z about
+		</div>
 	</div>
 </body>
 </html>
